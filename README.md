@@ -82,7 +82,7 @@ This file controls the overall structure and metadata of your site.
     *   The filename (without `.md`) is used as the unique ID for the blog post.
     *   Posts are automatically listed in the "Blogs" view (if configured in `main_navigation`) and sorted by filename (descending by default, assuming newer posts have later filenames/dates).
 
-##🎨 Customization
+## 🎨 Customization
 
 *   **Adding Themes:**
     1.  Define the CSS variables for your new theme in `build.py` within the `css_string` variable, following the pattern of existing themes (e.g., create a `body.theme-my-new-theme { ... }` block).
@@ -90,10 +90,10 @@ This file controls the overall structure and metadata of your site.
     3.  Re-run `python build.py`.
 *   **CSS/JS:** You can modify the base styles or JavaScript logic directly within the `css_string` and `js_logic_string` variables in `build.py`. *Note: This requires understanding the existing code structure.*
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! If you find bugs, have suggestions, or want to add features, feel free to open an issue or submit a pull request.
 
-##📜 License
+## 📜 License
 
 This project is licensed under the **MIT License**. 
