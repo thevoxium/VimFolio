@@ -1,0 +1,94 @@
+# Site Metadata
+# Used for the HTML <title> tag and potentially elsewhere if extended
+site_title: "TheVoxium"
+
+# Username displayed in the bottom-right status bar
+username: "voxium"
+
+# ------------------------------------------
+# Theming Configuration
+# ------------------------------------------
+
+# The default theme's CSS class name to apply when the page loads
+# Should match one of the `className` values below.
+default_theme: "theme-dracula"
+
+# List of available themes for the :themes command popup
+themes:
+  - name: "Dracula (Default)"
+    className: "theme-dracula"
+  - name: "Catppuccin Macchiato"
+    className: "theme-catppuccin"
+  - name: "Gruvbox Dark"
+    className: "theme-gruvbox"
+  - name: "Monokai"
+    className: "theme-monokai"
+  - name: "Nightfox"
+    className: "theme-nightfox"
+  - name: "OneNord"
+    className: "theme-onenord"
+  - name: "Tokyo Night"
+    className: "theme-tokyo-night"
+  - name: "Light Themes (for boomers only)" # Separator in the theme list
+    className: ""             # No CSS class for the separator
+    disabled: true            # Makes it non-selectable and visually distinct
+  - name: "One Light"
+    className: "theme-one-light"
+  - name: "Github Light"
+    className: "theme-github-light"
+  # Add more themes here following the same structure:
+  # - name: "My Custom Theme"
+  #   className: "theme-my-custom"
+
+# ------------------------------------------
+# Main Navigation Configuration
+# ------------------------------------------
+
+# Defines the items that appear in the main Neovim-like menu (the initial view).
+# 'text': What the user sees in the list.
+# 'targetView': The ID of the HTML element (view) to switch to when selected (e.g., 'about-view', 'blogs-list-view').
+# 'filename': The text displayed as the "filename" in the status bar for this item.
+main_navigation:
+  - text: "about"
+    targetView: "about-view"
+    filename: "about.md"
+  - text: "socials"
+    targetView: "socials-view"
+    filename: "socials.md" # Provides a filename even though content is from config
+  - text: "blogs"
+    targetView: "blogs-list-view"
+    filename: "blogs.list" # Indicates listing blogs
+
+# ------------------------------------------
+# Socials View Configuration
+# ------------------------------------------
+
+# Heading displayed at the top of the Socials view
+socials_heading: "Socials & Links"
+
+# List of social media links and other relevant links.
+# Used by build.py to generate the content for the 'socials-view'.
+# 'name': Label for the link (e.g., "GitHub", "LinkedIn").
+# 'url': The actual URL the link should point to.
+# 'display_text': (Optional) Custom text to display for the link itself. If omitted, the 'url' is used.
+socials_links:
+  - name: "GitHub"
+    url: "https://github.com/yourusername" # <-- CHANGE TO YOUR GITHUB USERNAME
+    display_text: "github.com/yourusername" # Optional custom display
+  - name: "LinkedIn"
+    url: "https://linkedin.com/in/yourprofile" # <-- CHANGE TO YOUR LINKEDIN PROFILE URL
+    # display_text: "linkedin.com/in/yourprofile" # Can omit if URL is fine
+  - name: "Twitter" # Or X, Mastodon, etc.
+    url: "https://twitter.com/yourhandle" # <-- CHANGE TO YOUR TWITTER/X HANDLE
+    display_text: "@yourhandle" # Custom display
+  - name: "Personal Site" # Example of another link
+    url: "https://your-other-site.com" # <-- CHANGE OR REMOVE
+  # Add more links here as needed
+
+# ------------------------------------------
+# (Future configuration sections could go here)
+# For example, you might later add options for:
+# - Blog pagination settings
+# - Custom command definitions
+# - Footer text
+# ------------------------------------------
